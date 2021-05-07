@@ -11,7 +11,7 @@ var whileLoop = (n) => {
   }
   return "done";
 }
-let p = 0;
+let p = -1;
 
 function incrementVariable() {
   p = p + 1;
