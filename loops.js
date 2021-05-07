@@ -18,8 +18,8 @@ function incrementVariable() {
   return p;
 }
 
- var doWhileLoop = (n) => {
+ var doWhileLoop = (num) => {
 do {
-  console.log("I run at least once");
-} while (incrementVariable() < 5);
+  console.log("I run once regardless.");
+} while (incrementVariable() < num);
 }
