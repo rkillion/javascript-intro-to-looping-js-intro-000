@@ -27,7 +27,7 @@ describe('loops', () => {
   })
 
   describe('forLoop(array)', () => {
-    it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
+    it('adds `"I am ${i} strange loop${i === 1 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
       const testArray = strangeArray.slice(array.length)
@@ -35,7 +35,7 @@ describe('loops', () => {
       let first = "I am 1 strange loop."
       let rest = "I am 24 strange loops."
 
-      expect(strangeArray[11]).to.equal(first)
+      expect(strangeArray[12]).to.equal(first)
       expect(strangeArray[34]).to.equal(rest)
       expect(strangeArray.length).to.equal(t + 25)
     })
