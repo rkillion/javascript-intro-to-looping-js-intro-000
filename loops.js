@@ -11,3 +11,15 @@ var whileLoop = (n) => {
   }
   return "done";
 }
+let p = 0;
+
+function incrementVariable() {
+  p = p + 1;
+  return p;
+}
+
+ var doWhileLoop = (n) => {
+do {
+  console.log("I run at least once");
+} while (incrementVariable() < 5);
+}
